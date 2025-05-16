@@ -1,0 +1,133 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,            % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+                       
+\usepackage{XCharter}               % set font
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\usepackage{changepage}
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=6pt} %%% Test various topsep values to fix vertical spacing errors
+
+% resume starts here
+\begin{document}
+
+% name
+\centerline{\Huge Adam Amin}
+
+\vspace{5pt}
+
+% contact information
+\centerline{\href{mailto:aamin027@ucr.edu}{aamin027@ucr.edu} | \textnormal{tel: 949-656-6010}} 
+% \vspace{0.1cm}
+
+% summary section
+\begin{adjustwidth}{2cm}{2cm}
+  \begin{center}
+    \textit{\small{Recent Computer Engineering B.S. graduate with passions in electronics and software design, seeking an entry-level role in embedded systems or software development.}}
+  \end{center}
+\end{adjustwidth}
+\vspace{-0.2cm}
+
+% skills section
+%% software engineering skills
+\section*{Software Engineering Skills}
+\textbf{Programming Languages:} C, C++, C\#, Java, Python, HTML5/CSS, JavaScript \\
+\textbf{Technologies and Protocols:} Git, GCC/GDB \\ 
+\textbf{Frameworks:} Selenium, React, Django
+\vspace{-11.5pt}
+
+%% Embedded Systems skills - electrical engineering
+\section*{Electrical Engineering Skills}
+\textbf{Programming Languages:} ARM Assembly, MIPS Assembly, Verilog \\
+\textbf{Technologies and Protocols:} Arduino, FreeRTOS, SPI, UART, VDHL \\
+\textbf{Simulation Tools:} MATLAB, OrCAD, PSpice, Synopsis \\
+\vspace{-8.5pt}
+
+% education section
+\section*{Education/Certifications}
+\textbf{University of California, Riverside} -- Bachelors of Science in Computer Engineering \hfill December 2024 \\
+\textbf{Irvine Valley College} -- Associates in Computer Science and Mathematics \hfill June 2022 \\
+\textbf{NCEES Fundamentals of Engineering} -- Electrical and Computer Engineering Certification \hfill \textbf{In Progress}
+
+\vspace{-8.5pt}
+
+% experience section
+\section*{Experience}
+\textbf{Quality Assurance Engineer,} {Promenade Software} -- Irvine, CA \hfill June 2020 -- August 2022 \\
+\vspace{-9pt}
+\begin{itemize}
+  % STAR: situation
+  \item Worked on the DxTerity COVID Project, a high-priority initiative to develop a web-based solution for purchasing test kits and securely storing COVID-19 related data.
+  % STAR: task
+  \item Ensured software quality by designing and executing test cases, identifying and reporting bugs, and verifying fixes.
+  % STAR: action
+  \item Utilized Jira to track and manage tasks, ensuring clear communication between QA and development teams.
+  \item Maintained detailed documentation of performed test cases, test validation, and test verification.
+  \item Collaborated with the development team to resolve issues, ensuring the timely delivery of requested software.
+  \item Performed automated testing using Python to test large volume requests, or various edge cases.
+  % STAR: result
+  \item Contributed to the successful delivery of a scalable, reliable, and secure system that met client requirements.
+\end{itemize}
+
+% \textbf{Job Title,} \href{https://www.fstl1992.com/}{Company} -- City, ST \hfill XXXX -- XXXX \\
+% \vspace{-9pt}
+
+\vspace{-18.5pt}
+
+% projects section
+\section*{Projects}
+
+\textbf{Joystick Hero - Arduino MEGA} %\hfill \href{https://www.hardwareishard.net/portfolio-database}{blog.com/projectname} \\
+\vspace{-7pt}
+\begin{itemize}
+  % \item Resume checklist: \url{https://old.reddit.com/r/EngineeringResumes/wiki/checklist}
+  \item Developed a rhythm-based game using an Arduino MEGA, integrating a 16x2 LCD display and joystick for user input.
+  \item Programmed game logic in C to display and track arrow patterns, requiring precise timing and input handling.
+  \item Designed circuits and tested input/output devices, ensuring reliable performance.
+\end{itemize}
+
+\textbf{Synthesizer - FRDM K64F Microcontroller} %\hfill \href{https://www.hardwareishard.net/portfolio-database}{blog.com/projectname} \\
+\vspace{-7pt}
+\begin{itemize}
+  \item Built a digital synthesizer using the FRDM-K64F microcontroller by implementing signal processing algorithms in C.
+  \item Designed the circuit and hardware which allowed to user to adjust volume and add effects to the audio signal.
+  \item Utilized ARM Cortex-M4 capabilities for real-time audio synthesis and debugging with GDB. 
+\end{itemize}
+
+\textbf{Volumetric Display Visualizer} %\hfill \href{https://mitcommlab.mit.edu/meche/commkit/portfolio/}{\textbf{In Progress}} \\
+\vspace{-7pt}
+\begin{itemize}
+  \item Designed a 3D visualizer using a Raspberry Pi 5 to display real-time images and video.
+  \item Integrated the system with TouchDesigner, an app for live visualization and user interaction.
+  \item Currently iterating on the design to improve performance and functionality.
+\end{itemize}
+
+% alternate formatting for projects section
+% \section*{Projects}
+% \begin{itemize}
+%   \item \textbf{QuantSoftware Toolkit:} Open source Python library for data analysis and machine learning for finance
+%   \item \textbf{GitHub Visualization:} Data visualization of Git Log data using D3 to analyze project trends over time
+%   \item \textbf{Recommendation System:} Music and movie recommender systems using collaborative filtering on public datasets
+%   \item \textbf{Mac Setup:} Book that gives step by step instructions on setting up developer environment on Mac OS
+% \end{itemize}
+
+
+\end{document}
