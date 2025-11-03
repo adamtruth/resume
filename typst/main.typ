@@ -12,7 +12,7 @@
 
 #align(center)[
   #v(2pt)
-  #text("Adam Amin", size: 25pt, weight: "regular")\
+  #text("Adam Amin", size: 23pt, weight: "regular")\
   #v(1pt)
   #text("adamamin54@gmail.com | tel: +61 438 627 158", size: 12pt, weight: "thin")\
 ]
