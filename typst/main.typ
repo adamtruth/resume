@@ -84,7 +84,7 @@ MATLAB, OrCAD, PSpice, Synopsis
 #v(-4pt)
 
 == Projects
-#line(length: 7in, stroke: 0.5pt)
+#line(length: 7.5in, stroke: 0.5pt)
 #v(-6pt)
 
 #strong("Synthesizer - FRDM K64F Microcontroller")
