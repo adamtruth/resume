@@ -94,7 +94,7 @@ MATLAB, OrCAD, PSpice, Synopsis
   [Designed the circuit and hardware which allowed to user to adjust volume and add effects to the audio signal.],
   [Utilized ARM Cortex-M4 capabilities for real-time audio synthesis and debugging with GDB.],
 )
-#strong("Volumetric Display Visualizer - Raspberry Pi Pico 2")
+#strong("Volumetric Display Visualizer - Raspberry Pi 5")
 #list(
   spacing: 9pt,
   [Designed a 3D visualizer using a Raspberry Pi 5 to display real-time images and video.],
