@@ -59,19 +59,11 @@ MATLAB, OrCAD, PSpice, Synopsis
 #strong("NCEES Fundamentals of Engineering") -- Electrical and Computer Engineering Certification #h(1fr) #strong("In Progress")
 #v(-4pt)
 
-// Experience Section
+// Job Experience Section
 == Experience
 #line(length: 7.5in, stroke: 0.5pt)
 #v(-6pt)
 
-#strong("Quality Assurance Engineer"), Promenade Software -- Irvine, CA #h(1fr) June 2020 -- August 2022
-#list(
-  spacing: 9pt,
-  [Worked on the DxTerity COVID Project, a high-priority initiative to develop a web-based solution for purchasing test kits and securely storing COVID-19 related data.],
-  [Ensured software quality by designing and executing test cases, identifying and reporting bugs, and verifying fixes.],
-  [Maintained detailed documentation of performed test cases, test validation, and test verification.],
-  [Contributed to the successful delivery of a scalable, reliable, and secure system that met client requirements.],
-)
 #strong("Software Developer"), Planet Innovation -- Melbourne, AU #h(1fr) July 2025 -- _Current_
 #list(
   spacing: 9pt,
@@ -80,6 +72,14 @@ MATLAB, OrCAD, PSpice, Synopsis
   [Facilitated software development using Docker containers, virtual environments, and Gitlab CI/CD.],
   [Developed automated test suites in Python and Robot Framework, increased test coverage and reduced manual QA efforts.],
   [Assisted in debugging and resolving system-level issues in production units, ensuring reliability of the pumps.],
+)
+#strong("Quality Assurance Engineer"), Promenade Software -- Irvine, CA #h(1fr) June 2020 -- August 2022
+#list(
+  spacing: 9pt,
+  [Worked on the DxTerity COVID Project, a high-priority initiative to develop a web-based solution for purchasing test kits and securely storing COVID-19 related data.],
+  [Ensured software quality by designing and executing test cases, identifying and reporting bugs, and verifying fixes.],
+  [Maintained detailed documentation of performed test cases, test validation, and test verification.],
+  [Contributed to the successful delivery of a scalable, reliable, and secure system that met client requirements.],
 )
 #v(-4pt)
 
